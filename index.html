@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: hsl(217, 54%, 11%);
+      color: hsl(215, 51%, 70%);
+      font-family: 'Outfit', sans-serif;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid hsl(215, 32%, 27%);
+      margin: 25px 0 15px;
+    }
+
+    .card {
+      background-color: hsl(216, 50%, 16%);
+      width: 350px;
+      margin: 130px auto 152px;
+      padding: 24px;
+      border-radius: 3%;
+    }
+
+    .img-div {
+      width: 302px;
+      height: 302px;
+      margin: 0 auto;
+      border-radius: 3%;
+      background-image: url("images/image-equilibrium.jpg");
+      background-size: 100%;
+    }
+
+    .overlay {
+      width: 302px;
+      height: 302px;
+      margin: 0 auto;
+      border-radius: 3%;
+      background-image: url("images/icon-view.svg");
+      background-size: 48px 48px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: hsla(178, 100%, 50%, 50%);
+      opacity: 0;
+    }
+
+    .overlay:hover {
+      opacity: 1;
+    }
+
+    .card-title {
+      color: hsl(0, 0%, 100%);
+      font-weight: 600;
+      margin: 30px 0;
+    }
+
+    .card-title:hover {
+      color: hsl(178, 100%, 50%);
+    }
+
+    .card p {
+      font-weight: 300;
+      font-size: 1.125rem;
+      margin: 0 0 30px;
+    }
+
+    .misc-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .eth {
+      color: hsl(178, 100%, 50%);
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+    }
+
+    .eth img {
+      margin-right: 6px;
+    }
+
+    .time-left {
+      font-weight: 400;
+      text-align: right;
+      display: flex;
+      align-items: center;
+    }
+
+    .time-left img {
+      margin-right: 9px;
+    }
+
+    .creator-info {
+      display: flex;
+      align-items: center;
+    }
+
+    .creator-name {
+      color: hsl(0, 0%, 100%);
+    }
+
+    .creator-name:hover {
+      color: hsl(178, 100%, 50%);
+    }
+
+    .avatar-img {
+      width: 33px;
+      border: 1px solid hsl(0, 0%, 100%);
+      border-radius: 100%;
+      margin-right: 17px;
+    }
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    @media (max-width: 375px) {
+
+      .card {
+        width: 330px;
+        margin: 61px auto 62px;
+      }
+ 
+      .img-div {
+        width: 279px;
+        height: 279px;
+      }
+
+      .overlay {
+        width: 279px;
+        height: 279px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="img-div">
+      <div class="overlay">
+      </div>
+    </div>
+    <h3 class="card-title">Equilibrium #3429</h3>
+
+    <p>Our Equilibrium collection promotes balance and calm.</p>
+
+    <div class="misc-info">
+      <div class="eth"><img src="images/icon-ethereum.svg"><span>0.041 ETH</span></div>
+      <div class="time-left"><img src="images/icon-clock.svg"><span>3 days left</span></div>
+    </div>
+    <hr>
+    
+    <div class="creator-info"><img src="images/image-avatar.png" class="avatar-img" alt="Jules Wyvern pic"><span>Creation of <span class="creator-name">Jules Wyvern</span></span></div>
+  
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Emilio</a>.
+  </div>
+</body>
+</html>
